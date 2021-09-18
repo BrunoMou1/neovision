@@ -22,14 +22,15 @@ export function Contato() {
             headers: myHeaders,
             body: raw
         };
-        fetch("https://85k7bv04na.execute-api.us-east-1.amazonaws.com/dev/register", requestOptions)
-            .then(response => response.text())
-            .then(result => alert(JSON.parse(result).body))
-            .catch(error => console.log('error', error));
+        
+        api.post("/register", requestOptions)
+            .then((response: any) => response.data())
+            .catch((error: any) => console.log('error', error));
 
         setName('')
         setEmail('')
     }
+
     return (
         <div className={styles.container}>
             <h1>Quer conhecer mais sobre o Neovision?</h1>

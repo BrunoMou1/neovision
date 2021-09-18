@@ -7,7 +7,7 @@ import celular from '../../images/1x/celular.png';
 export function Funcionalities() {
     let iconStyles = { color: '#F7941D', marginRight: '2rem' };
     return (
-        <div className={styles.container}>
+        <div id='funcionalidades' className={styles.container}>
             <img src={background} alt="banner" />
             <div className={styles.contain}>
                 <div>
