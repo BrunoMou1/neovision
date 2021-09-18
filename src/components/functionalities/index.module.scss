@@ -1,0 +1,40 @@
+.container{
+    > img{
+        width: 105%;
+        height: 650px;
+        margin: -15rem -1rem;
+    }
+}
+
+.contain{
+    display: flex;
+    justify-content: space-between;
+    height: 230px;
+    background-color: #F7941D;
+    
+    div{
+        width: 50%;
+        color: white;
+        font-size: 2.3rem;
+        font-weight: 300;
+        margin: -5rem 4rem;
+        height: 300px;
+
+        ul{        
+
+            li{
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+
+    img{
+        position: relative;
+        top: -18rem;
+        right: -2rem;
+        height: 600px;
+        width: 700px;
+    }
+}
