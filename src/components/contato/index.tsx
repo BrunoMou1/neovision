@@ -15,8 +15,7 @@ export function Contato() {
 
         var myHeaders = new Headers();
         myHeaders.append("Authorization", 'brunopmoura1@gmail.com');
-        var raw = JSON.stringify({ "name": name, "email": email });
-
+        var raw = { "name": name, "email": email }
         var requestOptions = {
             method: 'POST',
             headers: myHeaders,
