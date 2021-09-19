@@ -14,7 +14,7 @@ export function Contato() {
         }
 
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", email);
+        myHeaders.append("Authorization", 'brunopmoura1@gmail.com');
         var raw = JSON.stringify({ "name": name, "email": email });
 
         var requestOptions = {
@@ -22,10 +22,13 @@ export function Contato() {
             headers: myHeaders,
             body: raw
         };
-        
+
         api.post("/register", requestOptions)
-            .then((response: any) => response.data())
-            .catch((error: any) => console.log('error', error));
+            .then(() => alert('Cadastro realizado com sucesso'))
+            .catch((error: any) => {
+                console.log('error', error)
+                alert('Erro ao realizar cadastro. Verifique se todos os campos estão preenchidos corretamente')
+            });
 
         setName('')
         setEmail('')
