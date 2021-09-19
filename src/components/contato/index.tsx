@@ -15,14 +15,13 @@ export function Contato() {
 
         var myHeaders = new Headers();
         myHeaders.append("Authorization", 'brunopmoura1@gmail.com');
-        var raw = { "name": name, "email": email }
-        var requestOptions = {
-            method: 'POST',
-            headers: myHeaders,
-            body: raw
-        };
+        var body = { "name": name, "email": email }
+        var headers = {
+            "Authorization": 'brunopmoura1@gmail.com'
+        }
 
-        api.post("/register", requestOptions)
+
+        api.post("/register", body, {headers})
             .then(() => alert('Cadastro realizado com sucesso'))
             .catch((error: any) => {
                 console.log('error', error)
