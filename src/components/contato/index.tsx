@@ -13,8 +13,6 @@ export function Contato() {
             return
         }
 
-        var myHeaders = new Headers();
-        myHeaders.append("Authorization", 'brunopmoura1@gmail.com');
         var body = { "name": name, "email": email }
         var headers = {
             "Authorization": 'brunopmoura1@gmail.com'
