@@ -1,6 +1,6 @@
 # Neovision
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido para processo de estágio na empresa T2 Software
 
 ## Como executar
 Instale todas as dependências:
